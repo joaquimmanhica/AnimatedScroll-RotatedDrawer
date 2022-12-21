@@ -1,0 +1,72 @@
+
+.myContent .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+.myContent .cards .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 30px;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 10px;
+
+    transform: translateX(1000%);
+    transition: transform 0.4s ease;
+    font-size: 1.2rem;
+}
+
+
+.myContent .cards .card:nth-of-type(even){
+    transform: translateX(-1000%);
+
+}
+.myContent .cards .card.show {
+    transform: translateX(0);
+}
+
+.myContent .cards .card img{
+    width: 250px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.myContent .cards .card .card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.myContent .cards .card .card-info .card-text{
+    width: 300px;
+    padding: 10px;
+}
+.myContent .cards .card .card-info .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.myContent .cards .card .card-info .buttons .btn{
+    margin: 5px;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.myContent .cards .card .card-info .buttons .btn1{
+    background-color: tomato;
+}
+.myContent .cards .card .card-info .buttons .btn2{
+    background-color: #111;
+}
